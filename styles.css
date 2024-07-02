@@ -12,8 +12,7 @@ body {
     scrollbar-base-color: #f1f1f1;
     scrollbar-face-color: #888;
     scrollbar-track-color: #f1f1f1;
-    background-color: #FFFFFF; /* Color de fondo general */
-}
+    background-color: #FFFFFF; 
 
 header {
     background-color: #0056b3;
@@ -26,16 +25,16 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    flex-wrap: wrap; /* Permite que el contenido se ajuste en múltiples líneas si es necesario */
+    flex-wrap: wrap; 
 }
 
 nav {
-    width: 100%; /* Asegura que el nav ocupe el ancho completo del header */
-    max-width: 1200px; /* Máximo ancho para el nav */
+    width: 100%; 
+    max-width: 1200px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+    flex-wrap: wrap; 
 }
 
 nav ul {
@@ -45,7 +44,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%; /* Asegura que el ul ocupe el ancho completo del nav */
+    width: 100%; 
 }
 
 nav ul li {
@@ -155,30 +154,17 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.9);
     padding: 1.2rem;
     border-radius: 10px;
-    max-width: 32.917vw; /* Ancho máximo relativo */
-    margin: 0 auto; /* Centrado horizontal */
-    height: 74vh; /* Altura relativa del viewport */
+    max-width: 32vw; 
+    margin: 0 auto; 
     overflow-y: auto;
     font-family: 'Myriad Pro';
 }
 
-.form-container::-webkit-scrollbar {
-    width: 8px; /* Ancho de la barra de desplazamiento */
-}
 
-.form-container::-webkit-scrollbar-thumb {
-    background: #888; /* Color del "thumb" */
-    border-radius: 10px; /* Radio del borde */
-}
-
-.form-container::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-    border-radius: 10px; 
-}
 
 .form-container {
-    scrollbar-width: thin; /* Ancho del scrollbar */
-    scrollbar-color: #888 #f1f1f1; /* Color del thumb y track */
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
 }
 
 .form-container h2 {
@@ -197,6 +183,7 @@ nav a:hover {
 form {
     display: flex;
     flex-direction: column;
+    width: 28vw;
 }
 
 form label {
@@ -204,9 +191,11 @@ form label {
 }
 
 form input, form select {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     border: 1px solid #ccc;
     font-size: 1rem;
+    height: 4.2vh;
+    border-radius: 15px;
 }
 
 form button {
@@ -467,61 +456,61 @@ form button {
         filter: invert(100%);
         filter: invert(100%) brightness(100%);
     }
-/* Media query para resolución específica (420px x 932px) */
+
 @media (max-width: 430px) and (max-height: 932px) {
     
     header {
         width: 100%;
-        height: auto;  /* Ajuste del padding */
+        height: auto;  
         position: static;
     }
 
     nav {
-        flex-direction: column; /* Disposición en columna para el nav */
-        align-items: center; /* Centrar los elementos del nav */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     nav ul {
-        flex-direction: column; /* Disposición en columna para el ul */
-        align-items: center; /* Centrar los elementos del ul */
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li img {
-        height: 40px; /* Ajustar el tamaño de las imágenes */
-        margin: 0.5rem 0; /* Ajustar el margen */
+        height: 40px;
+        margin: 0.5rem 0; 
     }
 
     nav a {
-        padding: 0.5rem 1rem; /* Ajustar el padding de los enlaces */
-        font-size: 1rem; /* Ajustar el tamaño de la fuente */
+        padding: 0.5rem 1rem; 
+        font-size: 1rem; 
     }
 
     .a-consultar {
-        padding: 10px 20px; /* Ajustar el padding del botón */
+        padding: 10px 20px;
     }
 
     .main {
-        grid-template-columns: 1fr; /* Una sola columna para la disposición principal */
+        grid-template-columns: 1fr; 
         padding: 1rem;
-        gap: 1rem; /* Ajustar el espacio entre elementos */
+        gap: 1rem; 
         background-size: cover;
     }
 
     .main-text {
-        align-items: center; /* Centrar el texto principal */
+        align-items: center; 
     }
 
     .main-text h1 {
-        font-size: 2rem; /* Ajustar el tamaño de la fuente */
+        font-size: 2rem; 
     }
 
     .main-text p {
-        font-size: 1rem; /* Ajustar el tamaño de la fuente */
+        font-size: 1rem; 
     }
 
     .form-container {
-        max-width: 100%; /* Ancho completo para el contenedor del formulario */
-        height: auto; /* Ajuste automático de la altura */
+        max-width: 100%; 
+        height: auto; 
     }
     .texto2 span {
         font-size: 1.5rem;
@@ -542,25 +531,25 @@ form button {
     }
 
     .etapas-container {
-        grid-template-columns: 1fr; /* Una sola columna para la sección de etapas */
+        grid-template-columns: 1fr; 
     }
     .etapas h2{
         font-size: 1.5rem;
     }
     .etapa h3, .etapa p {
-        font-size: 1.5rem; /* Ajustar el tamaño de la fuente */
+        font-size: 1.5rem; 
     }
     .boton-etapa {
         width: 40%;
     }
     .bancos {
-        max-width: 80%; /* Ancho completo para la sección de bancos */
+        max-width: 80%; 
     }
     .bancos h3 {
         font-size:1.5rem ;
     }
     .grid-bancos-1 {
-        grid-template-columns: 1fr 1fr 1fr ; /* Una sola columna para la sección de bancos */
+        grid-template-columns: 1fr 1fr 1fr ;
     }
     .grid-bancos-2 {
         grid-template-columns: 1fr 1fr;
@@ -569,17 +558,17 @@ form button {
     }
     
     .img-bancos1, .img-bancos2, .img-bancos3 {
-        width: 80%; /* Ajustar el ancho de las imágenes */
-        height: auto; /* Ajuste automático de la altura */
+        width: 80%; 
+        height: auto; 
     }
     .img-bancos4, .img-bancos5 {
-        width: 50%; /* Ajustar el ancho de las imágenes */
-        height: auto; /* Ajuste automático de la altura */
+        width: 50%; 
+        height: auto;
     }
 
     .botonEntrega {
-        width: 50%; /* Ajustar el ancho del botón de entrega */
-        margin: 1rem auto; /* Centrar el botón y ajustar el margen */
+        width: 50%; 
+        margin: 1rem auto;
     }
     .pregunta h3 {
         font-size: 1.2rem;
@@ -605,11 +594,11 @@ form button {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+        height: 100%; 
     }
     
     .logo-gov img {
         width: 200px;
     }
     
-}
+}}
