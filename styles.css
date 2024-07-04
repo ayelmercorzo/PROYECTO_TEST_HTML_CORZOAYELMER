@@ -512,6 +512,14 @@ form button {
         max-width: 100%; 
         height: auto; 
     }
+
+    form select, form input {
+        width: 320px;
+    }
+
+    form button {
+        align-items: center;
+    }
     .texto2 span {
         font-size: 1.5rem;
     }
@@ -527,7 +535,7 @@ form button {
     }
 
     .globo {
-        opacity: 0.1;
+        opacity: 0;
     }
 
     .etapas-container {
@@ -578,7 +586,7 @@ form button {
         font-size: 1rem;
     }
     footer {
-        height: 80vh;
+        height: 42vh;
     }
     
     .contenido-footer {
